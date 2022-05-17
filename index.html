@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
-    <link rel="stylesheet" href="./assets/script.js">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <title>RPG</title>
 </head>
@@ -17,8 +16,8 @@
 
             <ul>
                 <li><a href="#Home">Home</a></li>
-                <li><a href="Loja">Loja</a></li>
-                <li><a href="#">Criando personagens</a></li>
+                <li><a href="#Loja">Loja</a></li>
+                <li><a href="#CRP">Criando personagens</a></li>
                 <li><a href="#">Fale conosco</a></li>
 
                 <img class="web" src="./assets/Imagem_Facebook.png" alt="Facebook">
@@ -33,10 +32,10 @@
             <h2>Inscreva-se agora no RPG</h2> <br><br>
             <p>Participe de uma aventura fantástica onde sua imaginação não terá limites!</p>
             <form>
-                <input class="input2" type="text" placeholder="Nome">  
-                <input class="input2" type="email" placeholder="E-mail">
-                <input class="input2" type="Tel" placeholder="Telefone">
-                <input class="input2" type="tel" placeholder="CPF">
+                <input class="input2" type="text" placeholder="Nome" id="name">  
+                <input class="input2" type="email" placeholder="E-mail" id="email">
+                <input class="input2" type="Tel" placeholder="Telefone" id="telefone" maxlength="14">
+                <input class="input2" type="tel" placeholder="CPF" id="CPF" maxlength="14">
                 <input type="submit" class="Criar_Conta" value="Criar conta"> 
             </form>
         </div>
@@ -52,18 +51,30 @@
 
             <h2 class="part_loja">Essa é a loja do Senhor Jão, um dos ferreiros e lojeiros do mundo de <br><br> RPG!</h2> <br>
             <p>Ele não é nada amigável, sempre resmugando e falando mal dos jovens da socidade...</p>
-
-            <img class="lojinha" src="./assets/Loja rpg.png" alt="loja">
-            <small>loja feita com itens para serem usadas no RPG</small>
+            <div class="lojona">
+                <img class="lojinha" src="./assets/Loja rpg.png" alt="loja">
+                <small class="texto_loja">fonte - loja feita com itens para serem usadas no RPG</small>
+            </div>
     </section>  
 
-<br><br><br><br>
+    <section class="section3" id="CRP">
+        <h2 class="Criando_Personagens">Essa é a parte que diversos jogadores de RPG adoram</h2>
+        <p class="como_criar">A modelagem e a criação de personagens é bem simples e fácil, apenas complete seu cadastro para ter seu personagem</p>
+
+        <div class="cadastro">
+            <input class="input3" type="text" placeholder="nome" id="name">
+            <input class="input3" type="text" placeholder="raça" id="name">
+            <input class="input3" type="text" placeholder="classe" id="name">
+            <input type="submit" class="Criar"  value="Criar Agora!">
+        </div>    
+        <img class="imagem_panda" src="./assets/Imagem_Panda.jfif" alt="">
+
+    </section>
 
     <footer>
-
+        <h3 class="copyright">@copyright,2022. Edu Argôlo Guerreiro da Silva</h3>
     </footer>
 
-
-
+    <script src="./script.js"></script>
 </body>
 </html>

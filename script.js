@@ -1,11 +1,14 @@
-//validação
 
 const name  = document.getElementById('name')
 const CPF = document.getElementById('CPF');
 const email = document.getElementById('email');
 const telefone = document.getElementById('telefone');
+const formulario = document.getElementsByClassName('formulario');
+const button = document.getElementById('mostrarTabela')
+let i = 0
+let z = 0
 
-//nome
+
 
 name.setAttribute('placeholder', 'Nome')
 name.addEventListener('input', Validarnome)
@@ -23,8 +26,6 @@ let test = conteúdo.indexOf('1')
     }
     }
 
-
-//CPF
 
 let maskCPF = document.getElementById('CPF')
 maskCPF.setAttribute('placeholder', 'CPF')
@@ -64,7 +65,9 @@ inputCPF.value = arrayCPF.join('')
     }
 }
 
-//telefone
+
+email.setAttribute ('placeholder','Email')
+
 
 let maskTel = document.getElementById('telefone')
 maskTel.setAttribute('placeholder', 'Telefone')
@@ -102,4 +105,54 @@ inputTel.value = arrayTel.join('')
             x++
         }
     }    
+}
+
+
+
+mostrarTabela.addEventListener('click', escondertabela)
+function escondertabela (){
+    if (i%2 == 0 ){
+        document.getElementById('tabela').setAttribute('class', 'escondido')
+    }else{
+        document.getElementById('tabela').setAttribute('class', 'table table-secondary table-hover table-bordered')
+    }
+    i++
+}
+
+
+registrar.addEventListener('click', addTabela)
+
+function addTabela (){
+let table = document.getElementsByTagName('tbody')[0]
+let tabela = document.createElement('tr')
+let cabeçalho = document.createElement('th')
+let nomeTabela = document.createElement('td')
+let cpfTabela = document.createElement('td')
+let emailTabela = document.createElement('td')
+let telTabela = document.createElement('td')
+
+cabeçalho.textContent = ''
+nomeTabela.textContent = name.value
+cpfTabela.textContent = CPF.value
+emailTabela.textContent = email.value
+telTabela.textContent = telefone.value
+
+
+
+tabela.appendChild(cabeçalho)
+tabela.appendChild(nomeTabela)
+tabela.appendChild(cpfTabela)
+tabela.appendChild(emailTabela)
+tabela.appendChild(telTabela)
+
+table.appendChild(tabela)}
+
+
+let registro = document.getElementById('registro')
+let tabela = document.getElementById('tabela')
+let corrigir = document.getElementById('corrigir')
+tabela.addEventListener('click', mostrarCorrigir)
+function mostrarCorrigir(){
+    corrigir.classList.remove('escondido')
+    registro.classList.add('escondido')
 }
