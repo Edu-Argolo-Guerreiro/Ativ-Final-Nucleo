@@ -1,0 +1,200 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+}
+
+body{
+    color: white;
+}
+
+nav{
+    background-color: #05676E ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Logo{
+
+    width: 96px;
+    height: 48px;
+    left: 23px;
+    top: 1px;
+
+}
+
+#Titulo{
+    /* LASFERA */
+
+    position: relative;
+    width: 190px;
+    height: 65px;
+    left: -300px;
+    top: -2px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 72px;
+
+    color: #FFFFFF;
+
+    mix-blend-mode: hard-light;
+}
+
+li{
+    display: inline-block;
+    margin: 10px;
+    text-align: right;
+}
+a{
+    text-decoration: none;
+    list-style: none;
+    color: #FFFFFF;
+    margin: 15% 0;
+    background: linear-gradient(#1A081F, #1A081F) center bottom;
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    padding-bottom: 7px;
+    transition: all 0.45s;
+}
+
+a:hover{
+    color: #1A081F;
+    background-size: 100% 2px;
+}
+
+
+img{
+    position: relative;
+    height: 20px;
+    margin: 1px;
+    width: 20px;
+    flex-direction: row;
+    top: 6px;
+}
+
+.ins{
+    font-size: 40px;
+    line-height: 10px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    background-color: #1A081F;
+}
+.ins h2{
+    font-size: 40px;
+    line-height: 20px;
+    padding-left: 30px;
+    margin-top: 70px;
+    margin-left: 30px;
+}
+
+span{
+    color: #000;
+}
+
+p{
+    line-height: 20px;
+    max-width: 500px; /*largura*/
+    font-size: 20px;
+    padding-left: 30px;
+    margin-left: 30px;
+}
+
+form{
+    padding-top: 40px;
+    padding-left: 80px;
+    display:flex;
+    flex-direction: column;
+    width: 85%;
+    height: 150px;
+}
+
+.input2{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border:none;
+    font-size: 15px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.Criar_Conta{
+    position: relative;
+    top: 20px;
+    left: 16px;
+    width: 200px;
+    padding-top: 25px;
+    margin-left: 85px;
+    padding: 1.3em 3em;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 5;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    
+}
+
+.Criar_Conta:hover {
+    background-color: #1A081F;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+    cursor: pointer;
+}
+
+.Criar_Conta:active {
+    transform: translateY(-1px);
+}
+
+.aside_capa{
+   padding: 100px 50px;
+}
+
+.capa{
+    width: 500px;
+    height: 500px;
+    left: 200px;
+    border-radius: 30%;
+    
+}
+
+.section2{
+    background-color: #8C6239;
+    height: 70vh;
+}
+
+.part_loja{
+    display: flex;
+    justify-content: space-between;
+    font-size: 40px;
+    line-height: 20px;
+    padding-left: 30px;
+    margin-left: 30px;
+    padding-top: 50px;
+}
+
+.lojinha{
+    height: 400px;
+    width: 300px;
+}
+
+    
+
+

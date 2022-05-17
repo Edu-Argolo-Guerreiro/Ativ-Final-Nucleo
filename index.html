@@ -6,39 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" href="./assets/script.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <title>RPG</title>
 </head>
 <body>
     <header>
         <nav>
-            <img id="Logo" src="./assets/Imagem_D&D.jfif" alt="icone D&D">
+            <img id="Logo" src="./assets/image 12.png" alt="icone D&D">
             <h1 id="Titulo">Lasfera</h1>
 
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Loja</a></li>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="Loja">Loja</a></li>
                 <li><a href="#">Criando personagens</a></li>
                 <li><a href="#">Fale conosco</a></li>
+
+                <img class="web" src="./assets/Imagem_Facebook.png" alt="Facebook">
+                <img class="web" src="./assets/Imagem_Instagram.png" alt="Instagram">
+                <img class="web" src="./assets/Imagem_Twitter.png" alt="Twitter">
             </ul>
-        <div class="redes_sociais">
-            <img src="./assets/Imagem_Facebook.png" alt="Facebook">
-            <img src="./assets/Imagem_Instagram.png" alt="Instagram">
-            <img src="./assets/Imagem_Twitter.png" alt="Twitter">
-        </div>
         </nav>
     </header>
     
-    <main>
-        <section>
-            <h2><span>Inscreva-se agora no RPG</span></h2>
+    <main id="Home">
+        <div class="ins">
+            <h2>Inscreva-se agora no RPG</h2> <br><br>
             <p>Participe de uma aventura fantástica onde sua imaginação não terá limites!</p>
-            <form class="formulario">
-                <input type="text" placeholder="Nome">  
-                <input type="email" placeholder="E-mail">
-                <input type="submit" value="Enviar >"> 
+            <form>
+                <input class="input2" type="text" placeholder="Nome">  
+                <input class="input2" type="email" placeholder="E-mail">
+                <input class="input2" type="Tel" placeholder="Telefone">
+                <input class="input2" type="tel" placeholder="CPF">
+                <input type="submit" class="Criar_Conta" value="Criar conta"> 
             </form>
+        </div>
+
+        <section>
+            <aside class="aside_capa" >
+                <img class="capa" src="./assets/Capa Lasfera.jpg" alt="Capa_Lasfera">
+            </aside>
         </section>
     </main>
+
+    <section id="Loja" class="section2">
+
+            <h2 class="part_loja">Essa é a loja do Senhor Jão, um dos ferreiros e lojeiros do mundo de <br><br> RPG!</h2> <br>
+            <p>Ele não é nada amigável, sempre resmugando e falando mal dos jovens da socidade...</p>
+
+            <img class="lojinha" src="./assets/Loja rpg.png" alt="loja">
+            <small>loja feita com itens para serem usadas no RPG</small>
+    </section>  
+
+<br><br><br><br>
+
+    <footer>
+
+    </footer>
+
+
 
 </body>
 </html>
