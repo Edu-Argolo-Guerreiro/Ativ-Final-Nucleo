@@ -62,6 +62,7 @@ inputCPF.value = arrayCPF.join('')
             x++
         }
     }
+    console.log(arrayCPF.join(''));
 }
 
 //telefone
@@ -101,5 +102,6 @@ inputTel.value = arrayTel.join('')
             inputTel.value = numerosTel
             x++
         }
-    }    
+    }  
+    console.log(arrayTel.join(''));  
 }
